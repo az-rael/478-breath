@@ -1,0 +1,76 @@
+/*Overall*/
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: #c6ffdd; /* fallback for old browsers */
+    background: -webkit-radial-gradient(#E9D2C0,#D0CEBA, #417B5A, #1F2041 ); /* Chrome 10-25, Safari 5.1-6 */
+    background: radial-gradient(#E9D2C0,#D0CEBA, #417B5A, #1F2041 );
+    
+}
+
+h1{
+    font-family: 'Bungee Shade', cursive;
+    text-align: center;
+    color: #E9D2C0;
+}
+/*Bubble*/
+#scale {
+    width: 100px;
+    height: 100px;
+    border: 1px #417B5A dashed;
+    border-radius: 50%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    box-shadow: 0px 0px 30px white;
+    animation: getbigger 19s linear infinite alternate; 
+    
+    
+}
+
+#breathe{
+    padding-top: 35%;
+    text-align: center;
+    color: #417B5A;
+    font-variant: small-caps;
+    font-size: 20px;
+
+
+}
+
+
+
+
+
+@keyframes getbigger {
+    0% {width: 100px;
+        height: 100px;
+       
+    }
+    
+    20% {
+        width: 200px;
+        height: 200px;
+    }
+
+   
+    57% {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    
+    100% {width: 100px;
+        height: 100px;
+        }
+}
+
